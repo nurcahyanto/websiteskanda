@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Sekolah</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class ="navbar">
+        <div class="container">
+            <img src="asset/logo.png" >
+            <a href="https://smkn2bdl.sch.id/html/" class="logo">SMK Negeri 2 Bandar Lampung</a>
+            
+            <ul class="menu">
+                <li><a href="#">Home</a> </li>
+                <li><a href="#">Jurusan</a> </li>
+                <li><a href="#">Alumni</a> </li>
+                <li><a href="#">Galeri</a> </li>
+            </ul>
+
+            <div class="tombol">
+                &#9776;
+            </div>
+        </div>
+
+    </nav>
+
+    <h1>Saya Belajar Membuat Nav-Bar</h1>
+</body>
+
+<script type="text/javascript">
+    //deklarasi menu dan tombol
+    const tombol = document.querySelector('.tombol');
+    const menu = document.querySelector('.menu');
+
+    // membuat event click
+    // pada saat tombol di click, tambahkan class aktif pada class menu
+    // saat di klik lahi, maka class aktif dihilangkan dari class menu
+    tombol.addEventListener('click', ()=>{
+        menu.classList.toggle('aktif');
+    });
+</script>
+</html>
